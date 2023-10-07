@@ -13,6 +13,17 @@
         background-color: lightblue;
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
         margin: 0 auto;
+        animation: flicker 0.5s infinite alternate;
+      }
+      @keyframes flicker {
+        0% {
+          opacity: 0.5;
+          background-color: lightgreen;
+        }
+        100% {
+          opacity: 1;
+          background-color: lightblue;
+        }
       }
     </style>
   </head>
